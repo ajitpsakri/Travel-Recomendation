@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import hubliDoc from "./db/hubli.js";
+import { useState } from "react";
+import display from "./components/display";
 function App() {
+  const [content, setContent] = useState(
+    "Hubli was originally named after flowers"
+  );
+
+  const handleClick = (ele) => {
+    setContent(display(ele));
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Places to Visit in Hubli-Dharwad</h1>
+      <nav className="buttons">
+        {hubliDoc.map((ele) => {
+          return (
+            <button onClick={() => handleClick(ele)} key={ele["button"]}>
+              {ele["button"]}
+            </button>
+          );
+        })}
+      </nav>
+      <section className="places">{content}</section>
     </div>
   );
 }
