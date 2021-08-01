@@ -5,12 +5,12 @@ const display = (ele) => {
         <div className="section-image">
           <img src={item.link} alt={item.name} />
         </div>
-        <div className="section-rating">
-          <small>{item.rating}</small>
-        </div>
-        <div className="Section-name">
+        
+          <small>Rating: {item.rating}</small>
+       
+  
           <h3>{item.name}</h3>
-        </div>
+        
       </div>
     );
   });

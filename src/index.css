@@ -2,17 +2,65 @@
   margin: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 
 :root {
-  --primary-color: #b45309;
+  --primary-color: #FCD34D;
+  --secondary-color:#CAD97E;
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--secondary-color);
+}
+
 .App {
-  background-color: var(--primary-color);
-  width: 600px;
+  width: 500px;
   margin: auto;
-  margin-top: 5rem;
-  /* text-align: center; */
+  margin-top: 0.2rem;
+  text-align: center;
+  border-radius: 1rem;
 }
 .section-image {
-  text-align: right;
+  text-align: left; 
+  margin: 1rem;
+  border-radius: 0.5rem;
+  padding: -2px;
+  background-color: var(--primary-color);
+
+}
+img{
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  
+}
+h1{
+  padding: 0.5rem;
+}
+small{
+  position: relative;
+  bottom: 3.5rem;
+  font-size: 15px;
+  text-align: left;
+}
+h3{
+  position: relative;
+  bottom: 7rem;
+  /* font-size: 30px; */
+}
+button{
+  padding: 0.6rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  cursor:pointer;
+  background-color: #595581;
+  color:white;
+  box-shadow: 0px 0px 100px;
+  
+}
+.display{
+  height: 110px;
+}
+h1{
+  color: #595581;
 }
