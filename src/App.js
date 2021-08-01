@@ -5,7 +5,7 @@ import display from "./components/display";
 import reactDom from "react-dom";
 function App() {
   const [content, setContent] = useState(
-    "Hubli was originally named after flowers"
+    ""
   );
 
   const handleClick = (ele) => {
