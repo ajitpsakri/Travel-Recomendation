@@ -2,7 +2,6 @@ import "./App.css";
 import hubliDoc from "./db/hubli.js";
 import { useState } from "react";
 import display from "./components/display";
-import reactDom from "react-dom";
 function App() {
   const [content, setContent] = useState(
     ""
